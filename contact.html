@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<section id="contact">
-
-<div class="card">
-
-<h2>📞 ช่องทางการติดต่อ</h2>
-
-<p>📧 Email : yourname@gmail.com</p><br>
-
-<p>📱 โทรศัพท์ : 08X-XXX-XXXX</p><br>
-
-<p>💙 Facebook : Your Name</p><br>
-
-<p>📸 Instagram : @yourname</p><br>
-
-<p>💚 Line : yourid</p>
-
-</div>
-
-</section>
-
-<footer>
-
-🌸 Portfolio นักเรียนชั้นมัธยมศึกษาปีที่ 6 🌸
-
-</footer>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works 🏆</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Kanit'; background-color: #FFF5F5; color: #4A4A4A; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .card { background: white; border-radius: 30px; border: 3px solid #E1A2AD; padding: 30px; width: 90%; max-width: 500px; box-shadow: 0 10px 25px rgba(225, 162, 173, 0.3); text-align: center; }
+        h1 { color: #E1A2AD; margin-top: 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
+        .work-item { background: #FFF5F5; border-radius: 20px; padding: 15px; border: 1px dashed #E1A2AD; }
+        .work-img { width: 100%; height: 100px; object-fit: cover; border-radius: 10px; margin-bottom: 10px; }
+        .back-btn { display: inline-block; width: 100%; text-align: center; background: #E1A2AD; color: white; text-decoration: none; padding: 10px 0; border-radius: 50px; font-weight: bold; transition: 0.3s; }
+        .back-btn:hover { background: #c98a95; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🏆 ผลงาน & กิจกรรม</h1>
+        
+        <div class="grid">
+            <div class="work-item">
+                <img src="work1.jpg" alt="ผลงาน 1" class="work-img" onerror="this.src='https://via.placeholder.com/150'">
+                <strong>กิจกรรมค่ายวิชาการ</strong>
+                <p style="font-size: 12px; margin: 5px 0 0 0;">เข้าร่วมอบรมค่ายคอมพิวเตอร์ประจำปี</p>
+            </div>
+            <div class="work-item">
+                <img src="work2.jpg" alt="ผลงาน 2" class="work-img" onerror="this.src='https://via.placeholder.com/150'">
+                <strong>รางวัลเรียนดี</strong>
+                <p style="font-size: 12px; margin: 5px 0 0 0;">ได้รับเกียรติบัตรผลการเรียนดีเด่น</p>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-btn">🏠 กลับหน้าหลัก</a>
+    </div>
 </body>
 </html>
