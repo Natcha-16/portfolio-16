@@ -1,33 +1,225 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="th">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
 
-    <title>Portfolio ณัฐชา</title>
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Sarabun',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#FFF6F8;
+}
+
+/* ---------- เมนู ---------- */
+
+nav{
+background:#E1A2AD;
+padding:20px;
+text-align:center;
+position:sticky;
+top:0;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+nav a{
+
+display:inline-block;
+margin:8px;
+padding:12px 25px;
+
+background:white;
+color:#E1A2AD;
+
+text-decoration:none;
+font-weight:bold;
+
+border-radius:30px;
+
+transition:.3s;
+
+box-shadow:0 3px 8px rgba(0,0,0,.15);
+
+}
+
+nav a:hover{
+
+background:#FFE6EC;
+transform:translateY(-3px);
+
+}
+
+/* ---------- หน้าแรก ---------- */
+
+header{
+
+text-align:center;
+padding:60px 20px;
+
+background:linear-gradient(#E1A2AD,#F8D6DD);
+
+color:white;
+
+}
+
+header img{
+
+width:220px;
+height:220px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid white;
+
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+}
+
+header h1{
+
+margin-top:20px;
+font-size:40px;
+
+}
+
+header p{
+
+margin-top:15px;
+font-size:18px;
+
+}
+
+/* ---------- ส่วนต่างๆ ---------- */
+
+section{
+
+width:90%;
+max-width:900px;
+
+margin:40px auto;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+h2{
+
+color:#E1A2AD;
+
+margin-bottom:20px;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+td{
+
+padding:12px;
+
+border-bottom:1px solid #ffd5de;
+
+}
+
+.project{
+
+background:#FFE9EF;
+
+padding:15px;
+
+margin:15px 0;
+
+border-radius:15px;
+
+}
+
+footer{
+
+background:#E1A2AD;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+margin-top:50px;
+
+}
+
+.decor{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+</style>
 
 </head>
 
-<body bgcolor="#E1A2AD">
-<a href="profile.html" >ประวัติส่วนตัว</a>
-<a href="education.html" >ประวัติการศึกษา</a>
-<a href="award.html" >ผลงาน</a>
-<a href="contact.html" >ช่องทางการติดต่อ</a>
-<img src="images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTEyL3Jhd3BpeGVsX29mZmljZV8zMV9waG90b190aGVfYmFieV9jYXRfY2hhcmFjdGVyaXN0aWNzX3NtaWxlX3J1bl84OGUxOWYzNi0wOGJhLTQyMmYtOTM1Mi01MWY1MjNjYWQzMzctbTUyNG92NHUucG5n.webp">
+<body>
 
+<!-- เมนู -->
 
-<br>นางสาวณัฐชา ภูนาคแสง</br>
+<nav>
 
+<a href="#home">🏠 หน้าแรก</a>
 
+<a href="#profile">💖 ประวัติส่วนตัว</a>
 
-<p>นักเรียนชั้นม.6</p>
+<a href="#education">🎓 การศึกษา</a>
 
+<a href="#portfolio">🏆 ผลงาน</a>
 
+<a href="#contact">📞 ติดต่อ</a>
 
-<p>โรงเรียนพานทอง</p>
+</nav>
 
+<!-- หน้าแรก -->
 
+<header id="home">
 
-</body>
+<div class="decor">🌸 🎀 💖 ✨ 🌸</div>
 
-</html>
+<img src="profile.jpg" alt="รูปภาพ">
+
+<h1>My Portfolio</h1>
+
+<h2>ชื่อ - นามสกุล</h2>
+
+<p>
+
+สวัสดีค่ะ ดิฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 6
+มีความสนใจด้านเทคโนโลยี การออกแบบเว็บไซต์
+และพร้อมเรียนรู้สิ่งใหม่ ๆ เพื่อพัฒนาตนเองอยู่เสมอ
+
+</p>
+
+</header>
