@@ -6,6 +6,64 @@
     <title>My Sweet Portfolio ✨</title>
     <style>
         /* ===========================
+   Pink Sparkle Effect
+=========================== */
+
+.sparkle{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    pointer-events: none;
+    z-index: 2;
+    animation: sparkleFall linear forwards;
+}
+
+.sparkle::before,
+.sparkle::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
+    background:#ff8fc1;
+    transform:translate(-50%,-50%);
+    border-radius:10px;
+    box-shadow:
+        0 0 8px #ffc4dd,
+        0 0 15px #ff8fc1,
+        0 0 25px #ffd6e7;
+}
+
+.sparkle::before{
+    width:2px;
+    height:10px;
+}
+
+.sparkle::after{
+    width:10px;
+    height:2px;
+}
+
+@keyframes sparkleFall{
+    0%{
+        transform:translateY(-20px) scale(.3) rotate(0deg);
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    50%{
+        transform:translateY(50vh) scale(1.2) rotate(180deg);
+    }
+
+    100%{
+        transform:translateY(calc(100vh + 40px))
+                  rotate(360deg);
+        opacity:0;
+    }
+}
+        /* ===========================
    Professional Sakura Effect
 =========================== */
 
@@ -169,6 +227,33 @@
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(225, 162, 173, 0.4);
         }
+        /* ===== Pink Sparkles ===== */
+
+function createSparkle(){
+
+    const star = document.createElement("div");
+
+    star.className = "sparkle";
+
+    star.style.left = Math.random() * window.innerWidth + "px";
+
+    const size = 6 + Math.random() * 8;
+
+    star.style.width = size + "px";
+    star.style.height = size + "px";
+
+    star.style.animationDuration =
+        (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(star);
+
+    setTimeout(()=>{
+        star.remove();
+    },8000);
+
+}
+
+setInterval(createSparkle,180);
     </style>
 </head>
 <body>
