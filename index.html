@@ -97,6 +97,7 @@
 }
         body {
            font-family:'Segoe UI','Kanit',sans-serif;
+    color:#4A4A4A;
 
     background:linear-gradient(
         180deg,
@@ -105,18 +106,12 @@
         #ffe7f2 70%,
         #ffdceb 100%
     );
-            background-attachment: fixed;
 
-    cursor: url("https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur"), auto;
-
+    background-attachment:fixed;
+    cursor:url("https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur"),auto;
 
     margin:0;
     min-height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
     overflow:hidden;
     position:relative;
 }
@@ -133,16 +128,24 @@
             min-height: 100vh;
         }
         .portfolio-card {
-            background-color: #ffffff;
-            border-radius: 30px;
-            box-shadow: 0 10px 25px rgba(225, 162, 173, 0.3);
-            padding: 40px;
-            width: 90%;
-            max-width: 450px;
-            text-align: center;
-            border: 3px solid #E1A2AD;
-            position: relative;
-        }
+            position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 450px;
+
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 3px solid #E1A2AD;
+    padding: 40px;
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(225, 162, 173, 0.3);
+
+    z-index: 100;
+}
         .portfolio-card::before {
             content: '🌸 ✨ 🍭';
             position: absolute;
